@@ -66,7 +66,7 @@ describe("Product Router", () => {
   });
 
   it("should insert a new product (code, name)", async () => {
-    const newProduct = { id: 373, name: "Yotsakon Mukda", price: 20 };
+    const newProduct = { id: 6604101373, name: "Yotsakon Mukda", price: 20 };
     const response = await request(app).post("/products").send(newProduct);
     expect(response.status).toBe(201);
     expect(response.body).toEqual({ message: "Product created successfully" });
